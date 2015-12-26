@@ -1,0 +1,14 @@
+@import "compass","compass/reset";
+
+/*px转化rem*/
+@function pxToRem($px) {
+    $pxConvertRem: 40px;
+
+    @if $px == 0 {
+        @return 0;
+    } @else {
+        @return $px / $pxConvertRem * 1rem;
+    }
+}
+
+@import "logistics/detail"

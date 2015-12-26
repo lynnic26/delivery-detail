@@ -1,0 +1,75 @@
+.logistics {
+	background-color: #e0e0e0;
+	.express-info {
+		box-sizing: border-box;
+		overflow: hidden;
+	    background-color: #fff;
+	    padding : pxToRem(30px) pxToRem(30px);
+	    margin-bottom: pxToRem(30px);
+	    height: pxToRem(120px);
+	    img {
+	    	float: left;
+	    	width: pxToRem(60px);
+	    	height: pxToRem(60px);
+	    }
+	    .digest {
+	    	padding-left: pxToRem(35px);
+	    	overflow: hidden;
+	    	font-size: pxToRem(25px);
+	    	.title{
+	    		padding-bottom: pxToRem(10px);
+	    	}
+	    }
+	}
+
+	.express-detail {
+		background-color: #fff;
+		margin-bottom: pxToRem(30px);
+		.title {
+			padding: 0 pxToRem(30px);
+			font-size: pxToRem(30px);
+			height: pxToRem(100px);
+			line-height: pxToRem(100px);
+			border-bottom: 1px solid #e0e0e0;
+		}
+		.express-list {
+			padding: 0 0 0 pxToRem(30px);
+			border-bottom: 1px solid #e0e0e0;
+			li {
+				position: relative;
+				margin-left: pxToRem(30px);
+				padding: pxToRem(20px) 0 0 pxToRem(50px);
+				font-size: pxToRem(25px);
+				border-left:1px solid #e0e0e0;
+			}
+			.delivery-info {
+				margin-bottom: pxToRem(10px);
+				line-height: 1.2;
+			}
+
+			.delivery-info:before {
+				content: "";
+				position: absolute;
+				left: pxToRem(-8px);
+				top: pxToRem(28px);
+                width: pxToRem(15px);
+                height: pxToRem(15px);
+                border-radius: 50%;
+                background-color: #e0e0e0;
+			}
+			li:first-child .delivery-info:before {
+				background-color: #a0a0a0;
+			}
+			li:last-child .delivery-time {
+				border-bottom: none;
+			}
+			.delivery-time {
+				padding-bottom: pxToRem(20px);
+				border-bottom: 1px solid #e0e0e0;
+			}
+			div[class|="delivery"] {
+				padding-right: pxToRem(50px);
+			}
+		}
+	}
+}
